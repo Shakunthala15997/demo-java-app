@@ -8,7 +8,23 @@ public class App {
 
         // Unused variable (Code smell)
         int age = 25;
+        if (age > 18) {
+            System.out.println("Eligible");
+            System.out.println("Can vote");
+            System.out.println("Can apply");
+        }
 
+        if (age > 18) {
+            System.out.println("Eligible");
+            System.out.println("Can vote");
+            System.out.println("Can apply");
+        }
+
+        if (age > 18) {
+            System.out.println("Eligible");
+            System.out.println("Can vote");
+            System.out.println("Can apply");
+        }
         // Null pointer risk (Bug)
         String name = null;
         if (name == null) {
