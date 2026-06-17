@@ -25,6 +25,14 @@ public class App {
             System.out.println("Can vote");
             System.out.println("Can apply");
         }
+        System.out.println("Line1");
+        System.out.println("Line2");
+        System.out.println("Line3");
+        System.out.println("Line4");
+        System.out.println("Line5");
+        System.out.println("Line6");
+        System.out.println("Line7");
+        System.out.println("Line8");
         // Null pointer risk (Bug)
         String name = null;
         if (name == null) {
