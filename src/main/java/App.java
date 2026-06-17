@@ -18,6 +18,9 @@ public class App {
         // Duplicate string (Code smell)
         String city1 = "Bangalore";
         String city2 = "Bangalore";
+        String city3 = "Bangalore";
+        String city4 = "Bangalore";
+        String city5 = "Bangalore";
 
         // Empty catch block (Code smell)
         try {
