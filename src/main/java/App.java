@@ -1,35 +1,29 @@
 public class App {
     public static void main(String[] args) {
 
-        // Hardcoded secret (Security issue)
+        // Hardcoded secret
         String password = "admin123";
 
-        // Null Pointer bug
+        // Possible null pointer
         String s = null;
-        System.out.println(s.length());
+        if (s != null) {
+            System.out.println(s.length());
+        }
 
-        // Division by zero bug
-        int a = 10 / 0;
-        System.out.println(a);
+        // Unused variable
+        int unused = 100;
 
-        // Duplicate code / unnecessary code smell
+        // Duplicate values
         String name = "Jenkins";
         String name2 = "Jenkins";
 
-        // Unused variable (Code smell)
-        int unused = 100;
-
-        // Infinite loop (Bug)
-        while(true) {
-        }
-
-        // Empty catch block (Code smell)
+        // Empty catch block
         try {
             int x = 5 / 0;
         } catch (Exception e) {
         }
 
-        // String comparison bug
+        // Wrong string comparison
         String x = new String("hello");
         if (x == "hello") {
             System.out.println("Matched");
@@ -37,11 +31,6 @@ public class App {
 
         // Resource leak
         java.util.Scanner sc = new java.util.Scanner(System.in);
-        System.out.println(sc.nextLine());
-
-        // Array index out of bounds
-        int[] arr = {1,2,3};
-        System.out.println(arr[5]);
 
         // Dead code
         if (false) {
